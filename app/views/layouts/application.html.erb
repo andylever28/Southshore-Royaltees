@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Royaltees</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+		<header class="row hidden-xs">
+			<div class="col-sm-6" > 
+				<div id="header-logo-cont"> <%= image_tag('logo.png', id: "header-logo") %> </div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row"> 
+					<div id="contact-info-cont">
+						 <div class="col-xs-11" id="header-social-links">Facebook Insta Twitter </div>
+						 <div class="col-xs-1"></div>
+						 <div class="col-xs-11" id="header-contact-info">
+						 		<p> 631-225-2911</p>
+						 		<p> SouthShoreRoyalTees@gmail.com</p>
+						 		<p> 150 West Hoffman Avenue</p>
+						 		<p> Lindenhurst, NY - 11757</p>
+						 </div>
+						 <div class="col-xs-1"></div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<div class="row">
+		<div class="col-xs-12 no-padding">
+			 <nav class="navbar navbar-inverse">
+		  	<div class="container-fluid">
+		    	<div class="navbar-header">
+		      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>                        
+		      	</button>
+		    	</div>
+		    	<div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav">
+		        	<li><%=link_to("HOME", root_path, class: "nav-links", id: "nav-end-left") %></li>
+		        	<li><%=link_to("ABOUT", main_about_path, class: "nav-links nav-bordered") %></li>
+		        	<li><%=link_to("SELECTED PORTFOLIO", main_portfolio_path, class: "nav-links") %></li>
+		        	<li><%=link_to("CONTACT", main_contact_path, class: "nav-links nav-bordered") %></li>
+		        	<li><a class="nav-links" id="nav-end-right" href="/store"> STORE </a></li>
+		      	</ul>
+	    		</div>
+		  	</div>
+			</nav> 
+		</div>
+	</div>
+    <%= yield %>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+

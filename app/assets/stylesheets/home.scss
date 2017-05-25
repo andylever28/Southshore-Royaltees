@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.slide-container {
+	width: 70%;
+  margin: 0 auto;
+  border: 5px solid #24A9DC;
+}
+
+.slides {
+  display: none;
+  border: 5px solid #FFFFFF;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#activeDot {
+  background-color: black;
+}
+
+img.slide-img {
+    border: 5px solid #8CC63E;
+    width: 100%;
+    height: 500px;
+}

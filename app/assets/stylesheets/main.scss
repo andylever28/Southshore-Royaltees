@@ -1,0 +1,193 @@
+@import "./variables.scss";
+
+
+
+
+.container-fluid {
+	background-color: #3F651A;
+}
+
+.navbar-inverse .navbar-nav li a.nav-links { 
+	color: white;
+}
+
+.navbar-inverse {
+	border-radius: 0px !important;
+}
+
+.navbar {
+	border: 0px !important;
+}
+
+	.no-padding {
+		padding: 0px !important;
+	}	
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	header.row {
+		display: block;
+	}
+
+	#header-logo {
+		height: 130px;
+    margin-top: 10px;
+    margin-left: 0px;
+
+	}
+	.navbar .navbar-nav {
+	  display: inline-block;
+	  float: none;
+	  vertical-align: top;
+	}	
+
+	.navbar .navbar-collapse {
+	  text-align: center;
+	  background-color: #3F651A;
+	}
+
+	body .container {
+		padding-left: 15px;
+		padding-right: 15px;
+	} 
+
+	body {
+		background-color: #F5F8FA !important;
+	}
+
+	.container {
+		background-image: url('Royaltees_bg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: #3D5D27;
+
+
+	}
+
+	header, #header-logo-cont, #contact-info-cont { 
+		height: 170px;
+	}
+
+	#contact-info-cont {
+		padding-top: 40px;
+		text-align: right;
+	}
+
+	#contact-info-cont p {
+		margin: 0px;
+		font-family: 'Montserrat', sans-serif;		
+		font-weight: bold;
+		font-style: italic;
+		font-size: 14px;
+		line-height: 1.2;
+	}
+
+	/* navbar */
+
+	.navbar-inverse .navbar-nav li{ 
+		padding: 0px;
+
+		a.nav-links { 
+			color: white;
+			font-size: 16px;
+			font-weight: bold;
+			text-decoration: none;
+			padding: 15px 20px;
+			font-style: italic;
+
+ 		}
+	}
+	.nav-bordered {
+ 			border-left: $nav-border;
+ 			border-right: $nav-border;
+ 		}
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+		body .container {
+	padding-left: 15px;
+	padding-right: 15px;
+
+	} 
+	body {
+		background-color: #F5F8FA !important;
+	}
+
+	/* header */
+	header, #header-logo-cont, #contact-info-cont { 
+		height: 200px;
+	}
+
+	#header-logo {
+		height: 160px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+	}
+
+
+	#contact-info-cont {
+		padding-top: 60px;
+		text-align: right;
+	}
+
+	#contact-info-cont p {
+		margin: 0px;
+		font-family: 'Montserrat', sans-serif;		
+		font-weight: bold;
+		font-style: italic;
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	/* Navbar */
+	.navbar-inverse {
+		border-radius: 0px !important;
+	}
+
+	.navbar {
+		border: 0px !important;
+		margin-top: 20px;
+	}
+
+	.navbar-inverse .navbar-nav li{ 
+		padding: 0px;
+
+		a.nav-links { 
+			padding: 15px 45px;
+ 		}
+
+	}
+	
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+		header, #header-logo-cont, #contact-info-cont  {
+		height: 230px;
+	}
+
+		#header-logo {
+	   height: 200px;
+	  }
+
+	  #contact-info-cont {
+		padding-top: 70px;
+	}
+	  /*navbar */
+	  nav {
+		height: 50px;
+	}
+
+		#nav-end-left {
+		border-left: 3px solid #8CC63E;
+	}
+	#nav-end-right {
+		border-right: 3px solid #8CC63E;
+	}
+
+}/*end 1200px */
+
+
