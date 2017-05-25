@@ -1,6 +1,6 @@
-$(document).ready(function () {
+    $(document).ready(function () {
         var slideIndex = 1;
-        var autoSlide = false;
+        var autoSlide = true;
         showSlides(slideIndex);
         setInterval(slideShow, 5000);
         setInterval(setAutoSlide, 10000);
@@ -19,27 +19,29 @@ $(document).ready(function () {
             }
         }
 
-	    function showSlides(n) {
-		    var slides = $('.slides');
+        function showSlides(n) {
+            var slides = $('.slides');
             var dots = $('.dot');
             if (n > $('.slides').length) { slideIndex = 1 }
             if (n < 1) { slideIndex = $('.slides').length }
-		    $('.slides').css("display", "none");
-		    $('.dot').attr('id', '');
-		    slides[slideIndex - 1].style.display = "block";
-		    dots[slideIndex - 1].id = "activeDot";
+            $('.slides').css("display", "none");
+            $('#fade').removeAttr("id");
+            $('.dot').attr('id', '');
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].id = "fade";
+            dots[slideIndex - 1].id = "activeDot";
 
         }
 
-	    function currentSlide(n) {
-	        autoSlide = false;
+        function currentSlide(n) {
+            autoSlide = false;
            showSlides(slideIndex = n)
            
        }
 
-	    function setAutoSlide() {
-	        autoSlide = false;
-	    }
+        function setAutoSlide() {
+            autoSlide = true;
+        }
 
 
         $('.prev').click(function() {

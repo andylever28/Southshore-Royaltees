@@ -1,14 +1,13 @@
-@import "./variables.scss";
-
 .slide-container {
-	width: 70%;
+  border: 1px solid black;
   margin: 0 auto;
-  border: 5px solid #24A9DC;
+  position: relative;
+  height: 500px;
+  width: 800px;
 }
 
 .slides {
   display: none;
-  border: 5px solid #FFFFFF;
 }
 
 .dot {
@@ -19,14 +18,60 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
 }
 
 #activeDot {
-  background-color: black;
+  background-color: #717171;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+
+
+}
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+text-decoration: none;
+color: white;
+}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
 }
 
 img.slide-img {
     border: 5px solid #8CC63E;
     width: 100%;
     height: 500px;
+}
+#fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .6} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .6} 
+to {opacity: 1}
 }
