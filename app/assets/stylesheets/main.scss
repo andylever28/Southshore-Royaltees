@@ -20,14 +20,22 @@
 .no-padding, .no-padding-xs {
 		padding: 0px !important;
 }	
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+#mobile-contact-cont {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1em;
 }
 
+.mobile-contact-header {
+	font-size: 2em;
+		color: $primary-color;
+
+}
+
+.mobile-social-logo {
+	width: 100%;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	header.row {
