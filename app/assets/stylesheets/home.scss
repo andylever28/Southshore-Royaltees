@@ -1,13 +1,16 @@
-.home-title {
+@import "./variables.scss";
+
+
+.page-title {
   text-align: center;
   color: #3C5C27;
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-stack;
   font-style: italic;
 }
 
-#home-title-row {
+#page-title-row {
   margin-top: 5px;
 }
 .slide-container {
@@ -20,7 +23,6 @@ img.slide-img {
     width: 100%;
 }
 /* Small devices (tablets, 768px and up) */
-
 
 .slides {
   display: none;
@@ -88,7 +90,7 @@ from {opacity: .6}
 to {opacity: 1}
 }
 @media (min-width: 768px) { 
-  .home-title {
+  .page-title {
     font-size: 30px;
   }
   .slide-container {

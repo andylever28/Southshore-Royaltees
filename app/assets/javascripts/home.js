@@ -1,4 +1,5 @@
     $(document).ready(function () {
+
         var slideIndex = 1;
         var autoSlide = true;
         showSlides(slideIndex);
@@ -57,4 +58,6 @@
             slideNum = e.target.className.split(' ')[1];
             currentSlide(Number(slideNum));
         })
+
+
     });

@@ -1,8 +1,5 @@
 @import "./variables.scss";
 
-
-
-
 .container-fluid {
 	background-color: #3F651A;
 }
@@ -37,7 +34,7 @@
     margin-left: 0px;
 
 	}
-	
+
 	.navbar .navbar-nav {
 	  display: inline-block;
 	  float: none;
@@ -63,7 +60,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-color: #3C5C27;
-
+		min-height: 800px;
 	}
 
 	header, #header-logo-cont, #contact-info-cont { 
