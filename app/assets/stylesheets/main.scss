@@ -21,20 +21,38 @@
 		padding: 0px !important;
 }	
 #mobile-contact-cont {
-	text-align: center;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 1em;
+	margin-top: 10px;
+			text-align: center;
+
 }
 
-.mobile-contact-header {
-	font-size: 2em;
-		color: $primary-color;
-
+#mobile-contact-info {
+	font-size: 1em;
+	margin-top: 10px;
+	padding: 5px;
+	p {
+		margin: 1px 0;
+		a{
+			color: black;
+		}
+	}
 }
 
 .mobile-social-logo {
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
+}
+
+#home-dots-cont {
+	text-align: center;
+}
+
+#mobile-contact-connect {
+	text-align: right;
+	color: #24AAE1;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -99,6 +117,14 @@
 		line-height: 1.2;
 	}
 
+
+	.header-social-logo {
+		height: 25px;
+		text-decoration: none;
+	}
+	.header-social-link {
+	    text-decoration: none !important;
+	  }
 	/* navbar */
 
 	.navbar-inverse .navbar-nav li{ 
