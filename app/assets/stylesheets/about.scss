@@ -8,3 +8,12 @@ img#page-section-img {
 	color: #3C5C27;
 	font-family: $font-stack;
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	#page-section-paragraph {
+		color: white;
+		font-family: sans-serif;
+		font-size: 18px;
+	}
+}

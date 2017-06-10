@@ -17,10 +17,16 @@
 	margin-bottom: 0px;
 }
 
-.no-padding {
+.no-padding, .no-padding-xs {
 		padding: 0px !important;
 }	
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -33,6 +39,10 @@
     margin-top: 10px;
     margin-left: 0px;
 
+	}
+
+	.no-padding-xs {
+		padding: 0 15px !important;
 	}
 
 	.navbar .navbar-nav {
