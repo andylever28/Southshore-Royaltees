@@ -1,3 +1,25 @@
-<h1>Main#contact</h1>
-<p>Find me in app/views/main/contact.html.erb</p>
+<div class="row" id="page-title-row">
+    <div class="col-xs-12 no-padding">
+        <div class="page-title"> Contact Us </div>
+    </div>
+</div>
+<div class="row">
 
+		<div class="col-sm-6 no-padding-xs">
+			<%= image_tag("about_us", id: "page-section-img") %> 
+						<p class="page-section-paragraph"> Come visit us at our new location! <br>150 West Hoffman Avenue <br>Lindenhurst, NY - 11757 </p>
+
+		</div>
+
+		<div class="col-sm-6 hidden-xs">
+			<p class="page-section-paragraph"> Phone: 631-225-2911</p>
+	 		<p class="page-section-paragraph"> E-mail: <%= mail_to "SouthShoreRoyalTees@gmail.com" %> </p>
+		<div class="row" id="desktop-contact-social">	
+			<div class="col-xs-4"><a href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", class: "desktop-social-logo") %> </a> </div>
+			<div class="col-xs-4"> <a href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", class: "desktop-social-logo") %>  </a></div>
+			<div class="col-xs-4"><%= image_tag("black_mail", class: "desktop-social-logo") %>  </div>
+			<div class="col-xs-12"> <p id="desktop-contact-connect">Connect with us! </div>	
+		</div>
+
+	</div>
+		</div>

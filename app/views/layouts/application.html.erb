@@ -32,13 +32,13 @@
 						 <div class="col-xs-11" id="header-social-links">
 								<a class="header-social-link" href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", class: "header-social-logo") %> </a>
 								<a class="header-social-link" href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", class: "header-social-logo") %>  </a>
-								<a href="#" class="header-social-link"> <%= image_tag("black_facebook", class: "header-social-logo") %> </a>
+								<a href="#" class="header-social-link"> <%= mail_to "SouthShoreRoyalTees@gmail.com", raw(image_tag("black_mail", class: "header-social-logo")) %></a>
 		</div>
 
 						 <div class="col-xs-1"></div>
 						 <div class="col-xs-11" id="header-contact-info">
 						 		<p> 631-225-2911</p>
-						 		<p> SouthShoreRoyalTees@gmail.com</p>
+						 		<p> <%= mail_to "SouthShoreRoyalTees@gmail.com" %> </p>
 						 		<p> 150 West Hoffman Avenue</p>
 						 		<p> Lindenhurst, NY - 11757</p>
 						 </div>
@@ -64,7 +64,8 @@
 		        	<li><%=link_to("ABOUT", main_about_path, class: "nav-links") %></li>
 		        	<li><%=link_to("SELECTED PORTFOLIO", main_portfolio_path, class: "nav-links") %></li>
 		        	<li><%=link_to("CONTACT", main_contact_path, class: "nav-links") %></li>
-		        	<li><a class="nav-links" id="nav-end-right" href="/store"> STORE </a></li>
+		        	<li><%=link_to("STORE", main_store_path, class: "nav-links", id: "nav-end-right") %></li>
+
 		      	</ul>
 	    		</div>
 		  	</div>
@@ -77,13 +78,13 @@
 		<div class="row" id="mobile-contact-social">	
 			<div class="col-xs-4"><a href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", class: "mobile-social-logo") %> </a> </div>
 			<div class="col-xs-4"> <a href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", class: "mobile-social-logo") %>  </a></div>
-			<div class="col-xs-4"><%= image_tag("black_facebook", class: "mobile-social-logo") %>  </div>
+			<div class="col-xs-4"><%= mail_to "SouthShoreRoyalTees@gmail.com", raw(image_tag("black_mail", class: "mobile-social-logo")) %>  </div>
 			<div class="col-xs-12"> <p id="mobile-contact-connect">Connect with us! </div>	
 		</div>
 
 	</div>
 	<div class="col-xs-12" id="mobile-contact-info">
-		<p> <u> Contact us: </u></p>
+		<p> <u> Contact</u></p>
 		<p> 631-225-2911 - <%= mail_to "SouthShoreRoyalTees@gmail.com" %></p>
  		<p> 150 West Hoffman Avenue Lindenhurst, NY - 11757</p>
 	</div>

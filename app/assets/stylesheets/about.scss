@@ -2,26 +2,31 @@
 
 img#page-section-img {
     width: 100%;
+    border: 8px solid #8CC63E;
 }
 
-#page-section-paragraph {
+.page-section-paragraph {
 	color: #3C5C27;
 	font-family: sans-serif;
 	font-weight: bold;
-	margin-top: 10px;
+	margin: 10px 0;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-	#page-section-paragraph {
+	.page-section-paragraph {
+		margin-top: 15px;
 		color: white;
 		font-family: sans-serif;
 		font-size: 16px;
+		a {
+		color: white;
+		}
 	}
 }
 
 @media (min-width: 992px) { 
-	#page-section-paragraph {
+	.page-section-paragraph {
 
 	font-size: 18px;
 	}

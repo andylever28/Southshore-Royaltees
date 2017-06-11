@@ -10,4 +10,8 @@ class MainController < ApplicationController
 
   def contact
   end
+
+  def store
+  end
+  
 end

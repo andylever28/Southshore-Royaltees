@@ -41,7 +41,7 @@
 	}
 }
 
-.mobile-social-logo {
+.mobile-social-logo, .desktop-social-logo {
 	width: 90%;
 	margin-left: 5%;
 }
@@ -53,6 +53,14 @@
 #mobile-contact-connect {
 	text-align: right;
 	color: #24AAE1;
+	margin-right: 15px;
+}
+
+#desktop-contact-connect {
+	text-align: left;
+	color: #24AAE1;
+	font-weight: bold;
+
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -104,7 +112,7 @@
 	}
 
 	#contact-info-cont {
-		padding-top: 40px;
+		padding-top: 30px;
 		text-align: right;
 	}
 
@@ -124,6 +132,18 @@
 	}
 	.header-social-link {
 	    text-decoration: none !important;
+	  }
+
+	  #header-contact-info {
+	  	color: black;
+
+	  a {	
+	  color: black;	
+	  	text-decoration: none;
+	  	&:hover {
+	  	color: #3C5C27;
+	  	}
+	  }
 	  }
 	/* navbar */
 
