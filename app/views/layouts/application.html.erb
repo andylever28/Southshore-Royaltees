@@ -30,9 +30,9 @@
 				<div class="row"> 
 					<div id="contact-info-cont">
 						 <div class="col-xs-11" id="header-social-links">
-								<a class="header-social-link" href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", class: "header-social-logo") %> </a>
-								<a class="header-social-link" href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", class: "header-social-logo") %>  </a>
-								<a href="#" class="header-social-link"> <%= mail_to "SouthShoreRoyalTees@gmail.com", raw(image_tag("black_mail", class: "header-social-logo")) %></a>
+								<a class="header-social-link" href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", class: "header-social-logo", alt: "facebook") %> </a>
+								<a class="header-social-link" href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", alt: "instagram", class: "header-social-logo") %>  </a>
+								<a href="#" class="header-social-link"> <%= mail_to "SouthShoreRoyalTees@gmail.com", raw(image_tag("black_mail", alt: "mail", class: "header-social-logo")) %></a>
 		</div>
 
 						 <div class="col-xs-1"></div>
@@ -79,9 +79,9 @@
     <div class="row visible-xs" id="mobile-contact-cont">
     	<div class="col-xs-12">
 		<div class="row" id="mobile-contact-social">	
-			<div class="col-xs-4"><a href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", class: "mobile-social-logo") %> </a> </div>
-			<div class="col-xs-4"> <a href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", class: "mobile-social-logo") %>  </a></div>
-			<div class="col-xs-4"><%= mail_to "SouthShoreRoyalTees@gmail.com", raw(image_tag("black_mail", class: "mobile-social-logo")) %>  </div>
+			<div class="col-xs-4"><a href="https://www.facebook.com/South-Shore-RoyalTees-413054182090007"> <%= image_tag("black_facebook", alt: "facebook", class: "mobile-social-logo") %> </a> </div>
+			<div class="col-xs-4"> <a href="https://www.instagram.com/southshoreroyaltees/"> <%= image_tag("black_insta", alt: "instagram", class: "mobile-social-logo") %>  </a></div>
+			<div class="col-xs-4"><%= mail_to "SouthShoreRoyalTees@gmail.com", raw(image_tag("black_mail", alt: "mail", class: "mobile-social-logo")) %>  </div>
 			<div class="col-xs-12"> <p id="mobile-contact-connect">Connect with us! </div>	
 		</div>
 
